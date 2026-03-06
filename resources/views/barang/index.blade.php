@@ -1,0 +1,16 @@
+<x-main-layout :title-page="'Barang'">
+    <div class="card">
+        <div class="card-body">
+            @include('barang.partials.toolbar')
+            <x-notif-alert class="mt-4" />
+        </div>
+        
+        <div class="card-body">
+            @include('barang.partials.list-barang')
+        </div>
+        
+        <div class="card-body">
+            {{ $barangs->links() }}
+        </div>
+    </div>
+</x-main-layout>
